@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.12.4'",
@@ -486,19 +487,19 @@ test-integration = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "langgraph", specifier = ">=0.3.0,<0.4.0" }]
+requires-dist = [{ name = "langgraph", specifier = ">=0.3.0" }]
 
 [package.metadata.requires-dev]
 test = [
     { name = "mypy", specifier = ">=1.8.0" },
-    { name = "numpy", specifier = ">=1,<3" },
+    { name = "numpy", specifier = ">=1" },
     { name = "pytest", specifier = ">=8.0.0" },
-    { name = "pytest-asyncio", specifier = ">=0.21.1,<1.0.0" },
+    { name = "pytest-asyncio", specifier = ">=0.21.1" },
     { name = "pytest-socket", specifier = ">=0.7.0" },
     { name = "ruff", specifier = ">=0.9.4" },
     { name = "types-setuptools", specifier = ">=69.0.0" },
 ]
-test-integration = [{ name = "langchain", extras = ["openai"], specifier = ">=0.3.20,<0.4" }]
+test-integration = [{ name = "langchain", extras = ["openai"], specifier = ">=0.3.20" }]
 
 [[package]]
 name = "langgraph-checkpoint"
