@@ -1,0 +1,9 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+      "bigtool": "./langgraph_bigtool/agent_wrap.py:agent"
+    },
+    "env": ".env",
+    "python_version": "3.12"
+  }
+  

@@ -7,9 +7,16 @@ name = "langgraph-bigtool"
 version = "0.0.3"
 description = "Build LangGraph agents with large numbers of tools"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
+    "langchain>=0.3.20",
+    "langchain-anthropic>=0.3.19",
+    "langchain-google-vertexai>=2.0.28",
+    "langchain-openai>=0.3.30",
     "langgraph>=0.3.0",
+    "langgraph-cli[inmem]>=0.3.6",
+    "langgraph-sdk>=0.2.2",
+    "universal-mcp",
 ]
 
 [dependency-groups]
@@ -59,3 +66,6 @@ warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true
 check_untyped_defs = true
+
+[tool.uv.sources]
+universal-mcp = { git = "https://github.com/universal-mcp/universal-mcp", rev = "2deb6bb9d46d0d82f91e09386a1ca9ee3e1e2273" }
